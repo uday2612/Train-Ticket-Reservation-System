@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: '56f7c384-739c-4345-8f9e-576e5d333b5f', path: '', url: 'http://52.66.172.182:8080')], contextPath: 'trainticket', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: '87754d83-d967-4290-806c-36644dee0a59', path: '', url: 'http://3.109.121.36:8082')], contextPath: 'ticket', war: '**/*.war'
             }
         }
     }
